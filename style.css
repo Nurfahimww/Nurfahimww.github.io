@@ -462,3 +462,24 @@ footer {
         display: block;
     }
 }
+
+/* Project Image Container Styling */
+.project-img-container {
+    width: 100%;
+    height: 190px; /* Controls the height of the image preview */
+    overflow: hidden;
+    background-color: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Prevents image stretching or distortion */
+    transition: transform 0.4s ease;
+}
+
+/* Optional: Smooth zoom effect when you hover over the card */
+.project-card:hover .project-img-container img {
+    transform: scale(1.05);
+}
